@@ -3,7 +3,8 @@
   "scripts": {
     "dev": "bun run --hot src/index.js",
     "build:compile": "bun build src/index.js --compile --outfile ./dist/m3u8-sub",
-    "build:windows": "bun build src/index.js --compile --target=bun-windows-x64 --outfile ./dist/m3u8-sub.exe"
+    "build:linux-x64": "bun build src/index.js --compile --target=bun-linux-x64 --outfile ./dist/m3u8-sub",
+    "build:win-x64": "bun build src/index.js --compile --target=bun-windows-x64 --outfile ./dist/m3u8-sub.exe"
   },
   "dependencies": {
     "@hono/node-server": "^1.19.6",
