@@ -1,0 +1,250 @@
+{
+  "subscriptions": [
+    {
+      "vod_id": "88210",
+      "vod_name": "现在就出发第三季",
+      "current_episode": 22,
+      "download_episode": 1
+    },
+    {
+      "vod_id": "88013",
+      "vod_name": "终幕回旋曲：致无法再见的你",
+      "current_episode": 7,
+      "download_episode": 0
+    }
+  ],
+  "downloads": [
+    {
+      "vod_id": "88210",
+      "vod_name": "现在就出发第三季",
+      "title": "先导片上",
+      "link": "https://vip.ffzy-online1.com/20251018/58393_2f7d1ea3/index.m3u8",
+      "is_download": false,
+      "download_times": 0
+    },
+    {
+      "vod_id": "88210",
+      "vod_name": "现在就出发第三季",
+      "title": "先导片下",
+      "link": "https://vip.ffzy-online1.com/20251019/58436_9cf47de5/index.m3u8",
+      "is_download": false,
+      "download_times": 0
+    },
+    {
+      "vod_id": "88210",
+      "vod_name": "现在就出发第三季",
+      "title": "第20251023期",
+      "link": "https://vip.ffzy-online1.com/20251023/58556_f5b2af70/index.m3u8",
+      "is_download": false,
+      "download_times": 0
+    },
+    {
+      "vod_id": "88210",
+      "vod_name": "现在就出发第三季",
+      "title": "第20251025期",
+      "link": "https://vip.ffzy-online1.com/20251025/58629_7684e639/index.m3u8",
+      "is_download": false,
+      "download_times": 0
+    },
+    {
+      "vod_id": "88210",
+      "vod_name": "现在就出发第三季",
+      "title": "第20251026期",
+      "link": "https://vip.ffzy-online1.com/20251026/58653_aeca93c4/index.m3u8",
+      "is_download": false,
+      "download_times": 0
+    },
+    {
+      "vod_id": "88210",
+      "vod_name": "现在就出发第三季",
+      "title": "第20251028期",
+      "link": "https://vip.ffzy-online3.com/20251028/38787_5077e766/index.m3u8",
+      "is_download": false,
+      "download_times": 0
+    },
+    {
+      "vod_id": "88210",
+      "vod_name": "现在就出发第三季",
+      "title": "第20251101期",
+      "link": "https://vip.ffzy-online3.com/20251101/38919_ad4ccc76/index.m3u8",
+      "is_download": false,
+      "download_times": 0
+    },
+    {
+      "vod_id": "88210",
+      "vod_name": "现在就出发第三季",
+      "title": "第20251102期",
+      "link": "https://vip.ffzy-online3.com/20251102/38954_3543d545/index.m3u8",
+      "is_download": false,
+      "download_times": 0
+    },
+    {
+      "vod_id": "88210",
+      "vod_name": "现在就出发第三季",
+      "title": "第20251103期",
+      "link": "https://vip.ffzy-online3.com/20251103/38977_b5c358c2/index.m3u8",
+      "is_download": false,
+      "download_times": 0
+    },
+    {
+      "vod_id": "88210",
+      "vod_name": "现在就出发第三季",
+      "title": "第20251104期",
+      "link": "https://vip.ffzy-online3.com/20251104/39006_019cdb6d/index.m3u8",
+      "is_download": false,
+      "download_times": 0
+    },
+    {
+      "vod_id": "88210",
+      "vod_name": "现在就出发第三季",
+      "title": "第20251108期",
+      "link": "https://vip.ffzy-online3.com/20251108/39150_2db7eeae/index.m3u8",
+      "is_download": false,
+      "download_times": 0
+    },
+    {
+      "vod_id": "88210",
+      "vod_name": "现在就出发第三季",
+      "title": "第20251109期",
+      "link": "https://vip.ffzy-online3.com/20251109/39186_6299f7b7/index.m3u8",
+      "is_download": false,
+      "download_times": 0
+    },
+    {
+      "vod_id": "88210",
+      "vod_name": "现在就出发第三季",
+      "title": "第20251110期",
+      "link": "https://vip.ffzy-online3.com/20251110/39214_4e342d45/index.m3u8",
+      "is_download": false,
+      "download_times": 0
+    },
+    {
+      "vod_id": "88210",
+      "vod_name": "现在就出发第三季",
+      "title": "第20251111期",
+      "link": "https://vip.ffzy-online3.com/20251111/39237_f76d445d/index.m3u8",
+      "is_download": false,
+      "download_times": 0
+    },
+    {
+      "vod_id": "88210",
+      "vod_name": "现在就出发第三季",
+      "title": "第20251115期",
+      "link": "https://vip.ffzy-online3.com/20251115/39380_862090b9/index.m3u8",
+      "is_download": false,
+      "download_times": 0
+    },
+    {
+      "vod_id": "88210",
+      "vod_name": "现在就出发第三季",
+      "title": "第20251116期",
+      "link": "https://vip.ffzy-online3.com/20251116/39417_7bc99e67/index.m3u8",
+      "is_download": false,
+      "download_times": 0
+    },
+    {
+      "vod_id": "88210",
+      "vod_name": "现在就出发第三季",
+      "title": "第20251117期",
+      "link": "https://vip.ffzy-online3.com/20251117/39450_444d8477/index.m3u8",
+      "is_download": false,
+      "download_times": 0
+    },
+    {
+      "vod_id": "88210",
+      "vod_name": "现在就出发第三季",
+      "title": "第20251118期",
+      "link": "https://vip.ffzy-online3.com/20251118/39479_633fc6b4/index.m3u8",
+      "is_download": false,
+      "download_times": 0
+    },
+    {
+      "vod_id": "88210",
+      "vod_name": "现在就出发第三季",
+      "title": "第20251122期",
+      "link": "https://vip.ffzy-online3.com/20251123/39639_fcf1a7a6/index.m3u8",
+      "is_download": false,
+      "download_times": 0
+    },
+    {
+      "vod_id": "88210",
+      "vod_name": "现在就出发第三季",
+      "title": "第20251123期",
+      "link": "https://vip.ffzy-online3.com/20251123/39640_58749277/index.m3u8",
+      "is_download": false,
+      "download_times": 0
+    },
+    {
+      "vod_id": "88210",
+      "vod_name": "现在就出发第三季",
+      "title": "第20251124期",
+      "link": "https://vip.ffzy-online3.com/20251124/39666_aa8dc00b/index.m3u8",
+      "is_download": false,
+      "download_times": 0
+    },
+    {
+      "vod_id": "88210",
+      "vod_name": "现在就出发第三季",
+      "title": "第20251125期",
+      "link": "https://vip.ffzy-online3.com/20251125/39686_7ab5b50d/index.m3u8",
+      "is_download": false,
+      "download_times": 0
+    },
+    {
+      "vod_id": "88013",
+      "vod_name": "终幕回旋曲：致无法再见的你",
+      "title": "第01集",
+      "link": "https://vip.ffzy-video.com/20251014/28640_a12848ae/index.m3u8",
+      "is_download": false,
+      "download_times": 0
+    },
+    {
+      "vod_id": "88013",
+      "vod_name": "终幕回旋曲：致无法再见的你",
+      "title": "第02集",
+      "link": "https://vip.ffzy-video.com/20251021/29241_1365edf8/index.m3u8",
+      "is_download": false,
+      "download_times": 0
+    },
+    {
+      "vod_id": "88013",
+      "vod_name": "终幕回旋曲：致无法再见的你",
+      "title": "第03集",
+      "link": "https://vip.ffzy-video.com/20251028/29841_8a95e369/index.m3u8",
+      "is_download": false,
+      "download_times": 0
+    },
+    {
+      "vod_id": "88013",
+      "vod_name": "终幕回旋曲：致无法再见的你",
+      "title": "第04集",
+      "link": "https://vip.ffzy-video.com/20251104/30392_63e8e953/index.m3u8",
+      "is_download": false,
+      "download_times": 0
+    },
+    {
+      "vod_id": "88013",
+      "vod_name": "终幕回旋曲：致无法再见的你",
+      "title": "第05集",
+      "link": "https://vip.ffzy-video.com/20251111/30916_e37d9170/index.m3u8",
+      "is_download": false,
+      "download_times": 0
+    },
+    {
+      "vod_id": "88013",
+      "vod_name": "终幕回旋曲：致无法再见的你",
+      "title": "第06集",
+      "link": "https://vip.ffzy-video.com/20251118/31454_4d5c3e59/index.m3u8",
+      "is_download": false,
+      "download_times": 0
+    },
+    {
+      "vod_id": "88013",
+      "vod_name": "终幕回旋曲：致无法再见的你",
+      "title": "第07集",
+      "link": "https://vip.ffzy-video.com/20251125/31950_5ee8bb7c/index.m3u8",
+      "is_download": false,
+      "download_times": 0
+    }
+  ]
+}
