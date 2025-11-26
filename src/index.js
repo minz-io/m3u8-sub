@@ -18,10 +18,10 @@ import {
 await initDB()
 
 // 任务
-const watchJob = schedule.scheduleJob('* * * * *', async ()=>{
+const watchJob = schedule.scheduleJob(process.env.SCHEDULE_WATCH, async ()=>{
     watchJob.running === 0 && await episodeWatchTask()
 });
-const downloadJob = schedule.scheduleJob('*/5 * * * * *', async ()=>{
+const downloadJob = schedule.scheduleJob(process.env.SCHEDULE_DOWNLOAD, async ()=>{
     downloadJob.running === 0 && await episodeDownloadTask()
 })
 
