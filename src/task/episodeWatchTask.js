@@ -26,7 +26,7 @@ export const episodeWatchTask = async ()=>{
         if (!vods?.list || vods.list.length === 0) continue;
         const vod = vods.list[0]
 
-        const cutData = vod?.vod_play_url.split('$$$')[1]
+        const cutData = vod?.vod_play_url.split('$$$')[0]
         const list = cutData?.split('#')
         const theVods = list?.map(item => item.split('$'))
         for (const item of theVods) {

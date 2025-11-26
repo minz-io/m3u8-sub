@@ -44,16 +44,12 @@ export const episodeDownloadTask = async ()=>{
         "copy",
         "-y",
         path.join(process.env.DOWNLOAD_PATH, vod?.vod_name, `${vod?.title}.mp4`)
-    ],{
-        // stdout: "pipe",
-        // stderr: "pipe"
-    });
+    ],{});
 
     const exitCode = await proc.exited;
     if (exitCode !== 0) {
         // 失败
-        const stderrText = await proc.stderr.text();
-        logger.error(`下载失败 ${stderrText}`);
+        logger.info(`下载错误 ${vod.vod_name} ${vod.title}`);
         vod.download_times += 1
         await database.write()
         return
