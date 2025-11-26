@@ -20,24 +20,30 @@ export const episodeWatchTask = async ()=>{
     const subscriptions =  await getSubscription()
 
     for (const subscription of subscriptions) {
+
         // 获取节目进展
         const vods = await getVideo(subscription.vod_id)
+
         // 跳过
         if (!vods?.list || vods.list.length === 0) continue;
         const vod = vods.list[0]
 
-        const cutData = vod?.vod_play_url.split('$$$')[0]
-        const list = cutData?.split('#')
-        const theVods = list?.map(item => item.split('$'))
+        // 解析数据
+        const cutData = vod?.vod_play_url.replace('$$$', '#')
+        const vodList = cutData?.split('#')
+        const vodItemList = vodList?.map(item => item.split('$'))
+        const theVods = vodItemList.filter(item => item[1].includes('.m3u8'))
+
+        // 添加
         for (const item of theVods) {
             await addDownload(subscription.vod_id, subscription.vod_name, item[0], item[1])
         }
 
         // 更新订阅数量
         subscription.current_episode = theVods.length
+        console.log(subscription)
         await database.write()
 
-        await sleep(2000)
     }
 
 }
