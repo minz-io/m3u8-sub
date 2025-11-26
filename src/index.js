@@ -1,6 +1,7 @@
 import { Hono } from 'hono'
 import { cors } from 'hono/cors'
 import { serveStatic } from '@hono/node-server/serve-static'
+import { basicAuth } from 'hono/basic-auth'
 import schedule from 'node-schedule'
 import {episodeDownloadTask} from "./task/episodeDownloadTask";
 
@@ -27,22 +28,35 @@ const downloadJob = schedule.scheduleJob(process.env.SCHEDULE_DOWNLOAD, async ()
 
 const app = new Hono()
 
-// 前端静态文件
-app.use('/web/*', serveStatic({root: process.cwd()}))
+// CORS 配置
 app.use('/*', cors())
+
+// BasicAuth 中间件配置
+const isAuthEnabled = process.env.BASIC_AUTH_ENABLE === 'true'
+const authMiddleware = isAuthEnabled
+    ? basicAuth({
+        username: process.env.BASIC_AUTH_USERNAME || 'admin',
+        password: process.env.BASIC_AUTH_PASSWORD || 'admin',
+    })
+    : async (c, next) => await next() // 不启用认证时，直接通过
+
+// 首页跳转到 /web/
 app.get('/', (c) => {
-  return c.text('Hello M3U8!')
+  return c.redirect('/web/')
 })
 
-// 视频资源 API
-app.get('/video', getVideoListHandler)
-app.get('/video/:id', getVideoHandler)
+// 前端静态文件
+app.use('/web/*', authMiddleware, serveStatic({root: process.cwd()}))
 
-// 订阅管理 API
-app.get('/subscription', getSubscriptionListHandler)
-app.get('/subscription/:id', getSubscriptionByIdHandler)
-app.post('/subscription', addSubscriptionHandler)
-app.delete('/subscription/:id', deleteSubscriptionHandler)
+// 视频资源 API (需要认证)
+app.get('/video', authMiddleware, getVideoListHandler)
+app.get('/video/:id', authMiddleware, getVideoHandler)
+
+// 订阅管理 API (需要认证)
+app.get('/subscription', authMiddleware, getSubscriptionListHandler)
+app.get('/subscription/:id', authMiddleware, getSubscriptionByIdHandler)
+app.post('/subscription', authMiddleware, addSubscriptionHandler)
+app.delete('/subscription/:id', authMiddleware, deleteSubscriptionHandler)
 
 export default {
     hostname: process.env.HOST || '0.0.0.0',
