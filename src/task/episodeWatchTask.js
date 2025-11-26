@@ -41,7 +41,6 @@ export const episodeWatchTask = async ()=>{
 
         // 更新订阅数量
         subscription.current_episode = theVods.length
-        console.log(subscription)
         await database.write()
 
     }
