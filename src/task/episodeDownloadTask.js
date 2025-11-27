@@ -49,7 +49,7 @@ export const episodeDownloadTask = async ()=>{
     const exitCode = await proc.exited;
     if (exitCode !== 0) {
         // 失败
-        logger.info(`下载错误 ${vod.vod_name} ${vod.title}`);
+        logger.error(`下载错误 ${vod.vod_name} ${vod.title}`);
         vod.download_times += 1
         await database.write()
         return

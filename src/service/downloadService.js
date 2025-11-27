@@ -27,7 +27,7 @@ export const addDownload = async (vodId, vodName, title, link) => {
         download_times: 0,
     });
     await database.write();
-    logger.info(`发现剧集：${vodId} ${title} ${link}` )
+    logger.info(`发现剧集：${vodName} ${title} ${link}` )
 }
 
 /**
